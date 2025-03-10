@@ -1,0 +1,140 @@
+.aboutdiv{
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aboutdiv h5{
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+.underline{
+  width: 2.5vw;
+  height: 1vh;
+  background-color: rgb(3, 16, 75);
+  border-radius: 30px;
+  justify-self: center;
+  margin-top: 15px;
+}
+.aboutdiv p{
+  width: 1000px;
+  text-align: center;
+  justify-self: center;
+  font-size: 20px;
+}
+
+.boxgroup{
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.box, .box2{
+  width: 350px;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  background-color: white;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+}
+.box2{
+  background-color: rgb(2, 2, 53);
+  color: white;
+}
+.box h6, .box2 h6{
+  margin: 10px;
+  padding: 0;
+  font-size: 20px;
+}
+.box p, .box2 p{
+  display: inline;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.weatherb{
+  background-image: url(icons/family\ 3.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.w_head{
+  justify-self: center;
+  text-align: center;
+}
+.w_head h6{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+.w_head p{
+  margin: 0;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.counts{
+  text-align: center; 
+}
+.counts h6, .counts p{
+  margin: 0;
+  padding: 0;
+}
+.counts h6{
+  font-size: 50px;
+}
+.counts p{
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.countsflex{
+  display: flex;
+  justify-self: center;
+  gap: 70px;
+  margin-top: 120px;
+  text-align: center;
+}
+.industries{
+  justify-self: center;
+  justify-items: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.industries .h6{
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.cpfinance{
+  width: 390px;
+  margin: 10px;
+  display: flex;
+  align-items: top;
+  gap: 15px;
+}
+.cpfinance img{
+  width: 12%;
+  height: 5%;
+  background-color: rgb(24, 24, 185);
+  border-radius: 30px;
+}
+.cpfinance div h6, .cpfinance div p{
+  margin: 0;
+}
+.cpfinance div h6{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.cpfinance div p{
+  font-size: 16px;
+  font-weight: 500;
+}
+.combined{
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  justify-self: center;
+}

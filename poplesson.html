@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation Web</title>
+  <style>
+    .header01{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.header01 p{
+  font-size: 25px;
+  margin: 0;
+}
+.header01 div p a{
+  font-size: 20px;
+  text-decoration: none;
+}
+.header01 div{
+  display: flex;
+}
+.header01 a img{
+  margin: 10px;
+}
+.header01 button{
+  width: 8vw;
+  height: 8vh;
+  margin-left: 10px;
+}
+dialog{
+  border: none;
+  background-color: darkblue;
+  text-align: center;
+}
+dialog::backdrop{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+  </style>
+</head>
+<body>
+  <header class="header01">
+    <p>Welcome to Financial Services Consultant</p>
+    <div>
+      <p>English<a href="#">&#8964;</a></p>
+      <!--<a href="#"><img src="icons/facebook-app-symbol.png" alt="facebook" width="50%" height="20%"></a>
+      <a href="#"><img src="icons/twitter.png" alt="X"  width="50%" height="20%"></a>
+      <a href="#"><img src="icons/instagram.png" alt="instagram"  width="50%" height="20%"></a>-->
+      <button onclick="alert(popSign);">GET A QUOTE</button> <!--javascript math random, don't forget -->
+    </div>
+
+    <button onclick="
+    document.getElementById('pop').showModal()
+    ">click click</button>
+
+    <dialog id="pop">
+      <p>Javascript will not kee me</p>
+      <p id="q01" style="display: none;">Do not wait to strike till the iron is hot, but make it hot by striking</p>
+      <p id="q02" style="display: none;">Success is not final, failure is not fatal: it is the courage to continue that counts</p>
+      <p id="q03" style="display: none;">it always seems impossible until it's done</p>
+      <p id="q04" style="display: none;">Believe you can, you are halfway there</p>
+      <p id="q05" style="display: none;">Your present circumstances don't determine where you can go; there merely determine where you start </p>
+      <button onclick="document.getElementById('pop').close()">Click me</button>
+    </dialog>
+
+  </header>
+  <script>
+    const randomQuote = Math.random();
+
+    function popSign () {
+      if (randomQuote >= 0 && randomQuote < 0.2) {
+      console.log(document.getElementById('q01').style.display = "block");
+    } else if (randomQuote > 0.2 && randomQuote < 0.4) {
+      console.log(document.getElementById('q02'));
+    } else if (randomQuote > 0.4 && randomQuote < 0.6) {
+      console.log(document.getElementById('q03'));
+    } else if (randomQuote > 0.6 && randomQuote < 0.8) {
+      console.log(document.getElementById('q04'));
+    } else if (randomQuote > 0.8 && randomQuote < 1) {
+      console.log(document.getElementById('q05'));
+    }
+    } 
+
+    if (randomQuote > 0 && randomQuote <1 ) {
+      console.log('iya e');
+    }
+  </script>
+</body>
+</html>

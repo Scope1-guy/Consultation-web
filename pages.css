@@ -1,0 +1,72 @@
+.page1{
+  background-image: url(icons/family\ 3.jpg);
+  background-repeat: no-repeat;
+  padding: 100px;
+  width: auto;
+  overflow: hidden;
+}
+.page1 div{
+  background-color: rgba(0, 0, 0, 0.09);
+  padding: 30px;
+}
+.pagetext{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 750px;
+  margin: 0;
+}
+.pagebtn1, .pagebtn2{
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 14px;
+  border: none;
+  margin-top: 40px;
+}
+.pagebtn2{
+  background-color: rgb(2, 2, 63);
+  color: white;
+}
+
+.finance{
+  background-color: rgb(2, 2, 53);
+  padding: 25px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+}
+.finance div{
+  margin-left: 40px;
+}
+.finance div h6{
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+.finance div p{
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+  font-size: 21px;
+}
+.finance button{
+  margin-left: 700px;
+  width: 10vw;
+  padding: 10px 6px;
+  height: auto;
+  background-color: blue;
+  color: white;
+  font-weight: 900;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.finance button:hover{
+  background-color: white;
+  color: rgb(0, 0, 70);
+  scale: 1.1;
+}

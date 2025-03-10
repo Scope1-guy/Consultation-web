@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation Web</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="abouts.css">
+</head>
+<body>
+  <header class="header01">
+    <p>Welcome to Financial Services Consultant</p>
+    <div>
+      <p>English<a href="#">&#8964;</a></p>
+      <!--<a href="#"><img src="icons/facebook-app-symbol.png" alt="facebook" width="50%" height="20%"></a>
+      <a href="#"><img src="icons/twitter.png" alt="X"  width="50%" height="20%"></a>
+      <a href="#"><img src="icons/instagram.png" alt="instagram"  width="50%" height="20%"></a>-->
+      <button onclick="realQuote();">GET A QUOTE</button> <!--javascript math random, don't forget -->
+      <button onclick="document.getElementById('thepop').showModal()">SIGN IN OR REGISTER</button>
+
+      <dialog id="thepop">
+        <div class="popup">
+          <form>
+            <div class="sign">
+              <h4>Sign In</h4>
+              <button id="signclose" onclick="document.getElementById('thepop').close()">X</button>
+            </div>
+            <input type="email, text"  placeholder="Enter your email address or Username" required><br>
+            <input type="password" placeholder="Enter your password" required>
+            <p><a href="#">Forget your password</a></p>
+            <input type="submit" placeholder="Sign In">
+            <p>Or continue with</p>
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+          </form>
+        </div>
+      </dialog>
+
+    </div>
+  </header>
+
+  <header class="header02">
+    <div class="company_name">Consuloan</div>
+
+    <div class="phone"> <!--telephone-->
+      <img src="icons/phone.png" alt="phone" width="20%" height="70%">
+      <div>
+        <h6>001-1234-85463</h6>
+        <p>info.theguyyy@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="location"> <!--location-->
+      <img src="icons/location.png" alt="location" width="14%" height="70%">
+      <div>
+        <h6>40 Barla street 133/72</h6>
+        <p>United KIngdom</p>
+      </div>
+    </div>
+    <div class="time"><!--time-->
+      <img src="icons/location.png" alt="time" width="14%" height="70%">
+      <div>
+        <h6>8:50am - 9:00pm</h6>
+        <p>info.theguyyy@gmail.com</p>
+      </div>
+    </div>
+  </header>
+
+  <header class="header03">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">PAGES</a></li>
+      <li><a href="#">PROJECTS</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">SHOP</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+      <input type="search" placeholder="Search">
+  </header>
+  <div class="page1">
+    <div>
+      <p class="pagetext">Communication is the key for any Global Business</p>
+      <button class="pagebtn1">ABOUT US</button>
+      <button class="pagebtn2">OUR SERVICES</button>
+    </div>
+  </div>
+
+  <div class="finance"> 
+    <div>
+      <h6>Would you like to speak to one of your Financial advisers </h6>
+      <p>Just admit your contact details and we'll be in touch shortly</p>
+    </div>
+    <button onclick="realQuote();">GET A QUOTE</button>
+  </div><!--finance-->
+
+  <div class="aboutdiv"> <!--about-->
+    <h5>About Us</h5>
+    <div class="underline"></div>
+    <p>We help in creating a financial strategy that represents your personality. Getting to 
+      know you is financial advisor's primary goal. -An approach centered around your life's 
+      priorities. It's time for a financial strategy that puts your needs and priorities front and center
+    </p>
+    <div class="boxgroup"><!--3boxes-->
+      <div class="box">
+        <img src="icons/dollar.png" alt="dollar logo" width="15%">
+        <h6>Financial Projections</h6>
+        <p>We analyze market trends and business data to forecast revenue,
+          expenses, and growth.
+        </p>
+      </div>
+
+      <div class="box2">
+        <img src="icons/analysis.png" alt="dollar logo" width="15%">
+        <h6>Strategy & Consulting</h6>
+        <p>We provide expert guidance to refine your business strategy, optimize operations,
+          and drive sustainable growth.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="icons/customer-service.png" alt="analysis logo" width="15%">
+        <h6>Online Consulting</h6>
+        <p>Get professional advice and solutions remotely, tailored to your business
+          needs, anytime, anywhere.
+        </p>
+      </div>
+    </div>
+  </div> <!--about-->
+
+  <div class="weatherb">
+    <div class="w_head">
+      <h6>We advise you, you call the right decision!</h6>
+      <p>We help entrepreneurs get their act together before they talk to investors.</p>
+    </div><!--w_head-->
+
+    <div class="countsflex">
+      <div class="counts">
+        <h6>90</h6>
+        <p>Companies consulted</p>
+      </div>
+  
+      <div class="counts">
+        <h6>120</h6>
+        <p>Consultant</p>
+      </div>
+  
+      <div class="counts">
+        <h6>50</h6>
+        <p>Award Winning</p>
+      </div>
+  
+      <div class="counts">
+        <h6>240</h6>
+        <p>Satisfied Customers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="industries">
+    <h6 class="h6">Our Industries</h6>
+    <div class="underline"></div>
+
+    <div class="combined"><!--double 4 combined-->
+      <div><!--double-->
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+    
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+      </div><!--double ends-->
+
+      <div><!--double-->
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+    
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+      </div><!--double ends-->
+
+      <div><!--double-->
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+    
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+      </div><!--double ends-->
+
+      <div><!--double-->
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+    
+        <div class="cpfinance">
+          <img src="icons/customer-service.png" alt="hh">
+          <div>
+            <h6>Corporate Finance</h6>
+            <p>We help in creating a financial strategy that represents your personality. Getting to 
+              know you is financial advisor's primary goal.
+            </p>
+          </div>
+        </div>
+      </div><!--double ends-->
+    </div><!--double 4 combined-->
+  </div><!--industries-->
+
+  <div>
+    <h6>Meet Our Team</h6>
+    <p>We are here to accelerate your business and help you find the way</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

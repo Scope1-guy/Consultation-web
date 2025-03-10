@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      justify-items: center;
+      align-items: center;
+      padding: 30px;
+    }
+    h3{
+      text-decoration: underline;
+      font-style: oblique;
+      font-size: 30px;
+      margin: 10px;
+    }
+    button{
+      width: 10vw;
+      height: 9vh;
+      margin: 10px;
+      cursor: pointer;
+      background-color: rgb(56, 56, 133);
+      border: none;
+      border-radius: 3px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover{
+      background-color: yellowgreen;
+      color: black;
+      scale: 1.2;
+    }
+    #tasklist{
+      font-size: 20px;
+      margin: 10px;
+      font-weight: 600;
+      font-family: fantasy;
+    }
+  </style>
+</head>
+<body>
+  <div style="justify-items: center; background-color: yellow; overflow: hidden; padding: 20px;">
+    <h3>TO-DO Task</h3>
+    <button onclick="task()" title="click to add task">Add Task</button>
+    <button onclick="closeTask()" title="clear task">Clear Task</button>
+    <div id="tasklist"></div>
+  </div>
+
+  <script>
+    function task() {
+      let addTask = prompt('Add Task');
+
+      if (addTask) {
+        document.getElementById('tasklist').innerText = addTask;
+      }
+    }
+    function closeTask() {
+      document.getElementById('tasklist').innerText = '';
+    }
+  </script>
+</body>
+</html>
