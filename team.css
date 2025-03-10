@@ -1,0 +1,107 @@
+.team{
+    background-color: rgb(230, 227, 227);
+    justify-items: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.team h6{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+}
+.team p{
+    font-size: 24px;
+    margin: 0;
+    margin-top: 7px;
+}
+.picsdiv{
+    background-color: rgb(2, 28, 82);
+    width: 15vw;
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.names{
+    background-color: rgb(2, 28, 82);
+    color: white;
+    top: 20px;
+    padding: 20px;
+}
+.names h6, .names p{
+    margin: 0;
+}
+.names h6{
+    font-size: 22px;
+}
+.names p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+.socialmedias{
+    background-color: rgba(0, 20, 58, 0.7);
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}/*image or div as hover*/
+.picsdiv:hover .socialmedias{
+    opacity: 1;
+}
+.socialmedias img:hover{
+    background-color: white;
+    scale: 1.1;
+    border-radius: 15px;
+}
+.teampicture{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.customer-care{
+    background-color: rgba(4, 4, 150, 0.801);
+    justify-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.customer-care h6, .customer-care p{
+    margin: 0;
+    color: white;
+}
+.customer-care h6{
+    font-size: 40px;
+}
+.customer-care p{
+    width: 53vw;
+    font-size: 23px;
+    margin: 15px;
+}
+.customer-care form input{
+    width: 13vw;
+    height: 3vh;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+}
+.customer-care form .submit{
+    height: auto;
+    background-color: rgb(41, 41, 105);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
